@@ -3,6 +3,8 @@
 
 
 def pascal_triangle(n):
+    """returns a lis of lists of integers"""
+
     triangle = []
     for i in range(n):
         if i == 0:
