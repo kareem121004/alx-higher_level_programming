@@ -1,4 +1,4 @@
-# !/usr/bin/python3
+#!/usr/bin/python3
 """Module for Square class."""
 from models.rectangle import Rectangle
 
@@ -25,7 +25,7 @@ class Square(Rectangle):
         self.width = value
         self.height = value
 
-    def tmp_update(self, id=None, size=None, x=None, y=None):
+    def __update(self, id=None, size=None, x=None, y=None):
         """that assigns an argument to each attribute:"""
         if id is not None:
             self.id = id
