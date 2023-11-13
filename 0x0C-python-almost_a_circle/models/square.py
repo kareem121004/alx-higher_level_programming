@@ -12,11 +12,8 @@ class Square(Rectangle):
 
     def __str__(self):
         """string representation"""
-        id = self.id
-        size = self.__size
-        x = self.x
-        y = self.y
-        return "[Square] ({}) {}/{} - {}".format(id, x, y, size)
+        return '[{}] ({}) {}/{} - {}'.\
+                format(type(self).__name__, self.id, self.x, self.y, self.width)
 
     @property
     def size(self):
