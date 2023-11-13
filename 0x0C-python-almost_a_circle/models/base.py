@@ -1,7 +1,8 @@
-# !/usr/bin/python3
+#!/usr/bin/python3
 """This module implements `base` class"""
 
 import json
+import csv
 
 
 class Base:
