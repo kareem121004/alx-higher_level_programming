@@ -54,4 +54,4 @@ class Base:
             for lst in list_objs:
                 word.append(lst.to_dictionary())
             with open(filename, mode="w", encoding="utf-8") as f:
-                f.write(cls.to_json_string(list_objs))
+                f.write(cls.to_json_string(word))
