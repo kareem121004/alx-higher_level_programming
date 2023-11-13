@@ -2,6 +2,7 @@
 """This module implements `base` class"""
 
 import json
+import csv
 
 
 class Base:
