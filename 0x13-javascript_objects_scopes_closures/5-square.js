@@ -1,35 +1,12 @@
 #!/usr/bin/node
-class Rectangle {
-  constructor (w, h) {
-    if (w <= 0 || h <= 0 || w === undefined || h === undefined) {
-      return this;
-    } else {
-      this.width = w;
-      this.height = h;
-    }
-  }
-
-  print ()
-  {
-    for(let count = 0; count < this.height; count++)
-    {
-      console.log('X'.repeat(this.width));
-    }
-  }
-  rotate () {
-    let tmp = this.width;
-    this.width = this.height;
-    this.height = tmp;
-  }
-  double () {
-    this.width = 2 * this.width;
-    this.height = 2 * this.height;
-  }
-}
+/* Write a class Rectangle that defines a square and inherist from Rectangle of
+ * 4-rectangle.js */
+const Rectangle = require('./4-rectangle');
 
 class Square extends Rectangle {
   constructor (size) {
     super(size, size);
   }
 }
+
 module.exports = Square;

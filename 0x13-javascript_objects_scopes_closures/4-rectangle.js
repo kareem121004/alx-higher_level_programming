@@ -18,13 +18,15 @@ class Rectangle {
   }
 
   rotate () {
-    let tmp = this.width;
-    this.width = this.height;
-    this.height = tmp;
+  // Method that exchanges the width and the height of the rectangle}
+    [this.width, this.height] = [this.height, this.width];
   }
 
   double () {
-    this.width = 2 * this.width;
-    this.height = 2 * this.height;
+  // Method that multiples the width and the height of the rectangle by 2
+    this.width = this.width * 2;
+    this.height = this.height * 2;
   }
 }
+
+module.exports = Rectangle;
