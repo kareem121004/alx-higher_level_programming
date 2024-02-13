@@ -1,9 +1,8 @@
 #!/usr/bin/node
 class Rectangle {
   constructor (w, h) {
-    if (w <= 0 || h <= 0 || w === undefined || h === undefined) {
-      return this;
-    } else {
+  // Method that initialize a instance
+    if (w > 0 && h > 0) {
       this.width = w;
       this.height = h;
     }
